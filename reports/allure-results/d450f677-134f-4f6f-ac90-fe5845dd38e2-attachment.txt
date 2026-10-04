@@ -1,0 +1,24 @@
+[OK] Starting browser: chromium
+[OK] Headless mode: False (headed=True)
+[INFO] Navigating to: https://naveenautomationlabs.com/opencart
+[TRACE] Tracing enabled - capturing screenshots and actions
+exeception while clicking the account Locator.click: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'span:hastext("My Account")' is not a valid selector.
+    at query (<anonymous>:5720:41)
+    at <anonymous>:5730:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:5507:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:5717:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:5597:19)
+    at <anonymous>:5545:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:5507:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:5538:19)
+    at Object.query (<anonymous>:5752:44)
+    at <anonymous>:5710:21
+Call log:
+  - waiting for locator("span:hastext('My Account')")
+
+[RESULT] Test 'test_registration' result: [FAIL]
+[SAVE] Trace saved: reports/traces/test_registration_trace.zip
+[SAVE] Screenshot saved: reports/screenshots/test_registration.png
+[ATTACH] Screenshot attached to Allure report
+[ATTACH] Video attached to Allure report
+[CLEANUP] Closing browser context and stopping Playwright...
